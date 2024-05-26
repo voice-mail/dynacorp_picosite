@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-05-26 21:09:54",modified="2024-05-26 21:09:54",revision=0]]
+--[[pod_format="raw",created="2024-05-26 21:09:54",modified="2024-05-26 21:11:21",revision=1]]
 --[[	Thanks for using PicoNet Sitebuilder! I look forward
 	to seeing your picosite! In order to make this available
 	on PicoNet Explorer, you'll need to upload this lua file
@@ -13,7 +13,7 @@
 ]]
 
 	p = {
-	title="Contact ",
+	title="Home ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
