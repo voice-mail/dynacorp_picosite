@@ -40,10 +40,8 @@
 		palt(0, true)
 		sspr(self.image2, 0, 0, 300,32,0,0,300,32)
 		palt()
-		print("Thank you for visiting the official DYNACORP picosite!\n\n ",0,7.0,25)
-		rectfill(0,45.0,300,47.0,25)
-		print("5/26/2024 ### DYNACORP FOUNDED\n----------------------------------\nA game studio was established today by founder\n\"dial_tone\". Expect to see project updates,\ndownloads, and media on this picosite. \n ",0,48.0,25)
-		rectfill(0,108.5,300,109.5,25)
+		print("Thank you for visiting the official DYNACORP picosite!\n\n ",0,34.0,25)
+		print("5/26/2024 ### DYNACORP FOUNDED\n----------------------------------\nHey guys, this website is for my picotron\nexclusive game studio. I'm working on some pretty\ncool prototypes right now, so expect to see some\ndownloads here soon!\n ",0,77.0,25)
 		
 	end,
 	update = function(self,explorer)
