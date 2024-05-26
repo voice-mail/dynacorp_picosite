@@ -30,6 +30,27 @@
 				end
 			end
 		}))
+		self.button5 = self.g:attach_button({
+			x=2.5, y=46.5, width=57, height=13,
+			label="Downloads ",
+			click=function()
+				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
+			end
+		})
+		self.button6 = self.g:attach_button({
+			x=64.5, y=46.5, width=31, height=13,
+			label="Blog ",
+			click=function()
+				
+			end
+		})
+		self.button7 = self.g:attach_button({
+			x=100.5, y=46.5, width=47, height=13,
+			label="Contact ",
+			click=function()
+				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
+			end
+		})
 	end,
 	get_gui = function(self,explorer)
 		return self.g
@@ -40,8 +61,8 @@
 		palt(0, true)
 		sspr(self.image2, 0, 0, 300,32,0,0,300,32)
 		palt()
-		print("Thank you for visiting the official DYNACORP picosite!\n\n ",0,34.0,25)
-		print("5/26/2024 ### DYNACORP FOUNDED\n----------------------------------\nHey guys, this website is for my picotron\nexclusive game studio. I'm working on some pretty\ncool prototypes right now, so expect to see some\ndownloads here soon!\n ",0,77.0,25)
+		print("Thank you for visiting the official DYNACORP picosite!\n\n ",0,32,25)
+		print("a Picotron exclusive game studio. This corp is\nbrand new, but expect downloads and blog posts\nsoon!\n ",0,61.0,25)
 		
 	end,
 	update = function(self,explorer)
