@@ -1,3 +1,4 @@
+--[[pod_format="raw",created="2024-05-26 20:58:36",modified="2024-05-26 20:58:36",revision=1]]
 --[[	Thanks for using PicoNet Sitebuilder! I look forward
 	to seeing your picosite! In order to make this available
 	on PicoNet Explorer, you'll need to upload this lua file
@@ -12,7 +13,7 @@
 ]]
 
 	p = {
-	title="home ",
+	title="untitled_page ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
@@ -30,22 +31,22 @@
 				end
 			end
 		}))
-		self.button5 = self.g:attach_button({
-			x=2.5, y=46.5, width=57, height=13,
-			label="Downloads ",
+		self.button3 = self.g:attach_button({
+			x=5, y=37.5, width=42, height=13,
+			label="Home ",
+			click=function()
+				explorer:open_page("https://raw.githubusercontent.com/voice-mail/dynacorp_picosite/main/home.lua")
+			end
+		})
+		self.button4 = self.g:attach_button({
+			x=53.5, y=37.5, width=31, height=13,
+			label="Blog ",
 			click=function()
 				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
 			end
 		})
-		self.button6 = self.g:attach_button({
-			x=64.5, y=46.5, width=31, height=13,
-			label="Blog ",
-			click=function()
-				
-			end
-		})
-		self.button7 = self.g:attach_button({
-			x=100.5, y=46.5, width=47, height=13,
+		self.button5 = self.g:attach_button({
+			x=89.5, y=37.5, width=47, height=13,
 			label="Contact ",
 			click=function()
 				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
@@ -56,13 +57,12 @@
 		return self.g
 	end,
 	draw = function(self,explorer)
-		cls(32)
+		cls(0)
 		palt(0)
 		palt(0, true)
 		sspr(self.image2, 0, 0, 300,32,0,0,300,32)
 		palt()
-		print("Thank you for visiting the official DYNACORP picosite!\n\n ",0,32,25)
-		print("a Picotron exclusive game studio. This corp is\nbrand new, but expect downloads and blog posts\nsoon!\n ",0,61.0,25)
+		print("DOWNLOADS:\n\nNone yet :( ",0,54.0,25)
 		
 	end,
 	update = function(self,explorer)
