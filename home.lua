@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-05-26 20:58:36",modified="2024-05-26 20:58:36",revision=1]]
+--[[pod_format="raw",created="2024-05-26 20:58:36",modified="2024-05-26 21:08:30",revision=2]]
 --[[	Thanks for using PicoNet Sitebuilder! I look forward
 	to seeing your picosite! In order to make this available
 	on PicoNet Explorer, you'll need to upload this lua file
@@ -13,7 +13,7 @@
 ]]
 
 	p = {
-	title="untitled_page ",
+	title="Contact ",
 	g=create_gui({
 		x=0,y=0,
 		width=300,height=300,
@@ -31,23 +31,23 @@
 				end
 			end
 		}))
-		self.button3 = self.g:attach_button({
-			x=5, y=37.5, width=42, height=13,
-			label="Home ",
-			click=function()
-				explorer:open_page("https://raw.githubusercontent.com/voice-mail/dynacorp_picosite/main/home.lua")
-			end
-		})
 		self.button4 = self.g:attach_button({
-			x=53.5, y=37.5, width=31, height=13,
-			label="Blog ",
+			x=67.5, y=37.5, width=47, height=13,
+			label="Contact ",
 			click=function()
-				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
+				explorer:open_page("https://raw.githubusercontent.com/voice-mail/dynacorp_picosite/main/contact.lua")
 			end
 		})
 		self.button5 = self.g:attach_button({
-			x=89.5, y=37.5, width=47, height=13,
-			label="Contact ",
+			x=3.5, y=37.5, width=57, height=13,
+			label="Downloads ",
+			click=function()
+				explorer:open_page("https://raw.githubusercontent.com/voice-mail/dynacorp_picosite/main/downloads.lua")
+			end
+		})
+		self.button6 = self.g:attach_button({
+			x=120.5, y=37.5, width=47, height=13,
+			label="Blog ",
 			click=function()
 				explorer:open_page("https://raw.githubusercontent.com/May0san/piconetdemo/main/testpage.lua")
 			end
@@ -62,7 +62,7 @@
 		palt(0, true)
 		sspr(self.image2, 0, 0, 300,32,0,0,300,32)
 		palt()
-		print("DOWNLOADS:\n\nNone yet :( ",0,54.0,25)
+		print("Thank you for visiting the official DYNACORP\npicosite!\n\nThis is a Picotron exclusive game studio, founded\non 5/26/2024.\n\nExpect to see some downloads and blog posts soon!\n ",0,60.0,25)
 		
 	end,
 	update = function(self,explorer)
